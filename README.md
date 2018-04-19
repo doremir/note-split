@@ -1,4 +1,5 @@
-Divide musical notes according to a given meter.
+# Note Split
+**Divide musical notes according to a given meter.**
 
 Example:
 ```javascript
