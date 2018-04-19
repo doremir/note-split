@@ -1,0 +1,15 @@
+{
+  "name": "note-split",
+  "version": "1.0.0",
+  "description": "",
+  "main": "note-split.js",
+  "scripts": {
+    "watch": "webpack-dev-server -w",
+    "build": "webpack"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mathjs": "^4.1.2"
+  }
+}
