@@ -126,8 +126,8 @@ function divide(durations, measure_length, beat_length, position = math.fraction
 }
 
 export {
-    split as Split,
-    divide as divide
+    split,
+    divide
 };
 
 
