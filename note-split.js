@@ -33,6 +33,13 @@ function split(position, duration, beats, beat_denom = 4, rest = false, max_dots
     return duration;
   }
 
+  // Dotted off-beat note that completes a beat
+  const ending_position = measure_position.add(duration);
+  const ends_on_beat = ending_position.d <= beat_denom;
+  if (is_representable(duration, max_dots) && ends_on_beat) {
+    return duration;
+  }
+
   let division = new Fraction(1, measure_position.d);
   if (duration >= division) return division;
   do {
